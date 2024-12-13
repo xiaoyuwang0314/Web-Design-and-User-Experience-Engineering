@@ -1,0 +1,44 @@
+.upvote-container {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.upvote-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--light-border);
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    color: var(--light-text);
+    transition: all 0.2s ease;
+}
+
+.upvote-button:hover:not(:disabled) {
+    background-color: var(--light-surface);
+}
+
+.upvote-button.voted {
+    background-color: var(--light-primary);
+    color: white;
+    cursor: default;
+}
+
+.vote-count {
+    font-weight: bold;
+}
+
+body[data-theme='dark'] .upvote-button {
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .upvote-button:hover:not(:disabled) {
+    background-color: var(--dark-hover);
+}
+
+body[data-theme='dark'] .upvote-button.voted {
+    background-color: var(--dark-secondary);
+}

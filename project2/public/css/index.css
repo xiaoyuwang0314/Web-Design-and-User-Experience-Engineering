@@ -1,0 +1,58 @@
+:root {
+    --papayawhip: papayawhip;
+    --burlywood: burlywood;
+    --eee: #eee;
+    --lime: lime;
+    --lightcoral: lightcoral;
+    --black: black;
+    /* (with 0.7 opacity when used as a backdrop) */
+    --dodgerblue: dodgerblue;
+    --red: red;
+    --blue: blue;
+    --white: white;
+}
+
+.cards-container {
+    height: auto;
+    padding: 0.5rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: var(--white);
+    border: 1.2px solid var(--black);
+    padding: 1rem;
+    grid-column: span 12;
+    gap: 0.5rem;
+}
+
+h2 {
+    grid-column: span 8;
+    text-align: center;
+}
+
+.card-content {
+    grid-column: span 8;
+}
+
+.card-content p {
+    padding: 0.5rem;
+}
+
+.card-image {
+    grid-column: span 4;
+    width: 200px;
+    height: 200px;
+}
+
+@media (min-width: 44rem) {
+    .card {
+        margin: 0.5rem;
+    }
+
+    .card-image {
+        width: 200px;
+    }
+
+}

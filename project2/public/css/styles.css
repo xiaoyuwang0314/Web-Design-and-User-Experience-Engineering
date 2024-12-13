@@ -1,0 +1,131 @@
+:root {
+    --papayawhip: papayawhip;
+    --burlywood: burlywood;
+    --eee: #eee;
+    --lime: lime;
+    --lightcoral: lightcoral;
+    --black: black;
+    --dodgerblue: dodgerblue;
+    --red: red;
+    --blue: blue;
+    --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--papayawhip);
+}
+
+
+header {
+    background-color: var(--burlywood);
+    position: sticky;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--burlywood);
+}
+
+.nav-list.show {
+    display: flex;
+    width: 30%;
+}
+
+.nav-item {
+    padding: 0.5rem 2rem;
+}
+
+.nav-item a {
+    color: var(--black);
+}
+
+main {
+    padding: 0.5rem;
+    height: auto;
+}
+
+.footer-list {
+    background-color: var(--burlywood);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+}
+
+.footer-item a {
+    color: var(--black);
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+    padding: 0.5rem;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+@media (min-width: 44rem) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: space-evenly;
+    }
+
+    .footer-list {
+        flex-direction: row;
+    }
+}

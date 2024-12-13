@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logo.jpg" alt="A green-eyed civet cat" class="logo">
+        </a>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="menu.html">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="external.html">External Links</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://en.wikipedia.org/wiki/Cat">Cat</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Feral_cat">Feral cat</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Jungle_cat">Jungle cat</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="register-content">
+        <h1>Register</h1>
+
+        <form action="/register" method="POST" class="register-form">
+            <p class="form-instructions">Fields marked with an asterisk (*) are required.</p>
+
+            <div class="form-group">
+                <label for="name">Name <span class="required" aria-label="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required" aria-label="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="animal-type">Favorite Animal Type</label>
+                <select id="animal-type" name="animal-type">
+                    <option value="">Select an option</option>
+                    <option value="mammal">Mammal</option>
+                    <option value="bird">Bird</option>
+                    <option value="reptile">Reptile</option>
+                    <option value="amphibian">Amphibian</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="cat-news" name="cat-news" value="subscribe">
+                    <label for="cat-news">Subscribe to Cat News</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <a href="privacypolicy.com">privacy polic</a>
+        </p>
+    </footer>
+</body>
+
+</html>

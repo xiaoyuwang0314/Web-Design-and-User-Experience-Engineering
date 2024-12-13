@@ -1,0 +1,102 @@
+.tip-dialog {
+    padding: 2rem;
+    border: none;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    background: var(--light-surface);
+    color: var(--light-text);
+    margin: 0;
+    position: fixed;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tip-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.tip-dialog p {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: var(--light-text);
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--light-text);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light-border);
+    border-radius: 4px;
+    background: var(--light-surface);
+    color: var(--light-text);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+button[type="submit"] {
+    background: var(--light-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: var(--light-hover);
+}
+
+body[data-theme='dark'] .tip-dialog {
+    background: var(--dark-secondary);
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .close-button {
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .form-group input,
+body[data-theme='dark'] .form-group select,
+body[data-theme='dark'] .form-group textarea {
+    background: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] button[type="submit"] {
+    background: var(--dark-secondary);
+}
+
+body[data-theme='dark'] button[type="submit"]:hover {
+    background: var(--dark-hover);
+}
+
+body[data-theme='dark'] .tip-dialog p {
+    color: var(--dark-text);
+}

@@ -1,0 +1,153 @@
+.welcome-page {
+    padding: 2rem 1rem;
+    max-width: 55rem;
+    margin: 0 auto;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.welcome-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dark-mode-image {
+    display: none;
+}
+
+body[data-theme='dark'] .light-mode-image {
+    display: none;
+}
+
+body[data-theme='dark'] .dark-mode-image {
+    display: block;
+}
+
+.welcome-text {
+    color: var(--light-text);
+}
+
+.welcome-text h1 {
+    color: var(--light-primary);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.welcome-text h2 {
+    color: var(--light-secondary);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    /* line-height: 1.6; */
+    margin-bottom: 3rem;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--light-primary);
+}
+
+.feature-label {
+    font-weight: bold;
+    color: var(--light-secondary);
+}
+
+body[data-theme='dark'] .welcome-text {
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .welcome-text h1 {
+    color: var(--dark-primary);
+}
+
+body[data-theme='dark'] .welcome-text h2 {
+    color: var(--dark-primary);
+}
+
+body[data-theme='dark'] .features li::before {
+    color: var(--dark-primary);
+}
+
+body[data-theme='dark'] .feature-label {
+    color: var(--dark-primary);
+}
+
+body[data-theme='dark'] .subscribe-link {
+    color: var(--dark-primary);
+}
+
+body[data-theme='dark'] .subscribe-link:hover {
+    color: var(--dark-hover);
+}
+
+@media (min-width: 50rem) {
+    .welcome-content {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .welcome-image,
+    .welcome-text {
+        flex: 1;
+    }
+    .welcome-image {
+        height: auto;
+        align-self: stretch;
+    }
+    .welcome-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.sub-list {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    font-size: 0.9em;
+}
+
+.sub-list li {
+    margin-bottom: 0.25rem;
+}
+
+.subscribe-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: var(--light-text);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subscribe-link:hover {
+    color: var(--light-hover);
+}

@@ -1,0 +1,187 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--light-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    width: 90%;
+    max-width: 28rem;
+    margin: auto;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--light-text);
+    padding: 0.5rem;
+}
+
+.complex-form {
+    color: var(--light-text);
+}
+
+.complex-form h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--light-text);
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light-border);
+    border-radius: 4px;
+    background-color: var(--light-surface);
+    color: var(--light-text);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-group-checkbox input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.form-group-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: var(--light-primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+
+/* Dark theme */
+
+body[data-theme='dark'] .modal-content {
+    background-color: var(--dark-background);
+    border: 1px solid var(--dark-border);
+}
+
+body[data-theme='dark'] .close-button {
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .complex-form {
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .form-group label {
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] .form-group input[type="text"],
+body[data-theme='dark'] .form-group select,
+body[data-theme='dark'] .form-group textarea {
+    background-color: var(--dark-surface);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body[data-theme='dark'] button[type="submit"] {
+    border: 1px solid var(--dark-border);
+    background-color: var(--dark-border);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body[data-theme='dark'] button[type="submit"]:hover {
+    background-color: var(--dark-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--dark-border);
+}
+
+@media (min-width: 50rem) {
+    .modal-overlay {
+        padding: 5rem 2rem;
+    }
+    .modal-content {
+        padding: 2rem;
+        max-height: 700px;
+    }
+    .close-button {
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+    .complex-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+.required {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.form-note {
+    font-size: 0.75rem;
+    color: var(--light-text);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+body[data-theme='dark'] .form-note {
+    color: var(--dark-text-secondary);
+}

@@ -1,0 +1,43 @@
+# Images from Unsplash (https://unsplash.com/license)
+
+logo.jpg
+Source: https://unsplash.com/photos/close-up-photo-of-tabby-cat-cWOzOnSoh6Q
+Photographer: Pacto Visual (https://unsplash.com/@pactovisual)
+License: Unsplash License
+
+jorts.jpg
+Source: https://unsplash.com/photos/white-and-black-cat-behind-wall-in-closeup-photography-muXv8nbjVyE
+Photographer: Vinícius Henrique Photography (https://unsplash.com/@x_vinicius)
+License: Unsplash License
+
+jean.jpg
+Source: https://unsplash.com/photos/white-kitten-shallow-focus-photography-EXjVyg-8tec
+Photographer: Jeb Buchman (https://unsplash.com/@jebbuchman)
+License: Unsplash License
+
+maru.jpg
+Source: https://unsplash.com/photos/cat-hiding-on-gray-rock-bGG85MrGV1o
+Photographer: Max Sandelin (https://unsplash.com/@themaxsandelin)
+License: Unsplash License
+
+nyancat.jpg
+Source: https://unsplash.com/photos/shallow-focus-photography-of-brown-and-white-cat-RgizgQc-aVE
+Photographer: Krystal Ng (https://unsplash.com/@bykrystal)
+License: Unsplash License
+
+crumpy.jpg
+Source: https://unsplash.com/photos/brown-tabby-cat-in-close-up-photography-fP3NaY3VUPM
+Photographer: Anton Darius (https://unsplash.com/@thesollers)
+License: Unsplash License
+
+lil.jpg
+Source: https://unsplash.com/photos/white-and-black-cat-on-white-surface-FYonvSwyrJg
+Photographer: lilartsy (https://unsplash.com/@lilartsy)
+License: Unsplash License
+
+# Icons from Google Material Icons
+
+menu.svg
+Source: https://fonts.google.com/icons
+License: Apache License 2.0 (https://github.com/google/material-design-icons/blob/master/LICENSE)
+  

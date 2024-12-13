@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 1.5rem;
+    /* max-width: 55rem; */
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 10000;
+}
+
+.skip-link:focus {
+    top: 0;
+}

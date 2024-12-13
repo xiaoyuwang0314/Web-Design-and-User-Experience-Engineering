@@ -1,0 +1,44 @@
+:root {
+    --color-darkest: rgb(10, 9, 8);
+    --color-dark: rgb(34, 51, 59);
+    --color-light: rgb(242, 244, 243);
+    --color-accent1: rgb(40, 76, 106);
+    --color-accent2: rgb(13, 38, 48);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    grid-column: span 12;
+    padding-bottom: 1rem;
+}
+
+.about-text {
+    grid-column: span 12;
+    background-color: var(--color-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(10, 9, 8, 0.1);
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 50rem) {
+    .about-content {
+        padding: 2rem;
+    }
+
+    .about-text {
+        grid-column: 2 / span 9;
+    }
+}

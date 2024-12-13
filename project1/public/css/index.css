@@ -1,0 +1,117 @@
+:root {
+    --color-darkest: rgb(10, 9, 8);
+    --color-dark: rgb(34, 51, 59);
+    --color-light: rgb(242, 244, 243);
+    --color-accent1: rgb(40, 76, 106);
+    --color-accent2: rgb(13, 38, 48);
+}
+
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2 {
+    padding: 5px;
+    grid-column: span 12;
+}
+
+.category-section {
+    grid-column: span 12;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(10, 9, 8, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--color-dark);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 10px 0;
+    color: var(--color-darkest);
+    flex-grow: 1;
+}
+
+.cta-button {
+    display: block;
+    background-color: var(--color-accent2);
+    color: var(--color-light);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: auto;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+    font-size: 0.9rem;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent1);
+}
+
+.news-cards .card:nth-child(1) {
+    background-color: rgb(203, 209, 212);
+}
+
+.news-cards .card:nth-child(2) {
+    background-color: rgb(177, 199, 217);
+}
+
+.news-cards .card:nth-child(3) {
+    background-color: rgb(133, 181, 189);
+}
+
+.historical-cards .card:nth-child(1) {
+    background-color: rgb(78, 132, 175);
+}
+
+.historical-cards .card:nth-child(2) {
+    background-color: rgb(203, 209, 212);
+}
+
+.historical-cards .card:nth-child(3) {
+    background-color: rgb(177, 199, 217);
+}
+
+.historical-cards .card:nth-child(4) {
+    background-color: rgb(133, 181, 189);
+}
+
+@media screen and (min-width: 50rem) {
+    .cards-area {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .historical-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

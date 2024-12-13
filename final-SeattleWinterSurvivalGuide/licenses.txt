@@ -1,0 +1,41 @@
+# Icons from Material Icons (https://fonts.google.com/icons)
+Licensed under the Apache License 2.0
+- light_mode (Theme toggle icon)
+- dark_mode (Theme toggle icon)
+- logo (App logo)
+
+# Images from Unsplash (https://unsplash.com)
+Free to use under the Unsplash License (https://unsplash.com/license)
+
+seattle-light.jpg
+Photo by Andrea Leopardi
+https://unsplash.com/photos/space-needle-near-buildings-at-daytime-GV8eF1jJpSs
+  
+seattle-dark.jpg
+Photo by Casey Horner
+https://unsplash.com/photos/cn-tower-toronto-canada-29VFqg1pyK8
+    
+climbing.jpg
+Photo by bady abbas
+https://unsplash.com/photos/woman-climbing-on-wall-during-daytime-VmYZe_yqxL0
+
+cat-cafe.jpg
+Photo by Timo Volz
+https://unsplash.com/photos/orange-cat-stretching-on-white-surface-ZlFKIG6dApg
+
+museum.jpg
+Photo by Anthony Fomin
+https://unsplash.com/photos/a-close-up-of-a-metal-sculpture-on-a-sunny-day-LH-rQ2WXk5E
+
+shooting-range.jpg
+Photo by Nejc Soklič
+https://unsplash.com/photos/a-gun-and-a-box-of-cigarettes-on-a-table-o9jHERfClJk
+
+ice-skating.jpg
+Photo by Kelli McClintock
+https://unsplash.com/photos/figure-skater-on-ice-field-o2axbsu4kM4
+
+craft.jpg
+Photo by Estée Janssens
+https://unsplash.com/photos/flatlay-photography-of-stuffs-on-white-surface-MUf7Ly04sOI
+      

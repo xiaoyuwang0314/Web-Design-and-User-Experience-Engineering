@@ -1,0 +1,143 @@
+:root {
+    --papayawhip: papayawhip;
+    --burlywood: burlywood;
+    --eee: #eee;
+    --lime: lime;
+    --lightcoral: lightcoral;
+    --black: black;
+    /* (with 0.7 opacity when used as a backdrop) */
+    --dodgerblue: dodgerblue;
+    --red: red;
+    --blue: blue;
+    --white: white;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+    background-color: var(--white);
+    border: 1.2px solid var(--black);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    grid-column: span 12;
+    gap: 0.5rem;
+}
+
+h2 {
+    grid-column: span 12;
+    text-align: center;
+}
+
+.card p {
+    padding: 0.5rem;
+}
+
+.card-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 44rem) {
+    .card {
+        grid-column: span 4;
+        margin: 0.5rem;
+    }
+}
+
+.subscribe-btn {
+    color: var(--blue);
+    text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.subscribe-modal {
+    padding: 2rem;
+    border: 2px solid var(--black);
+    border-radius: 0;
+    max-width: 500px;
+    background-color: var(--white);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 1000;
+}
+
+.subscribe-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.subscribe-modal h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+}
+
+.submit-btn {
+    background-color: lime;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: lightcoral;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.error-message {
+    color: var(--red);
+    font-size: 0.9rem;
+    display: block;
+    min-height: 1.2em;
+    margin-top: -0.25rem;
+}
+
+.subscribe-btn:focus,
+.submit-btn:focus,
+.cancel-btn:focus {
+    outline: 2px solid var(--dodgerblue);
+    outline-offset: 2px;
+}
+
+.form-group input[aria-invalid="true"] {
+    border-color: var(--red);
+}

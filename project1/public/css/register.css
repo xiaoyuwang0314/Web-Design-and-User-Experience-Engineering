@@ -1,0 +1,99 @@
+:root {
+    --color-darkest: rgb(10, 9, 8);
+    --color-dark: rgb(34, 51, 59);
+    --color-light: rgb(242, 244, 243);
+    --color-accent1: rgb(169, 146, 125);
+    --color-accent2: rgb(94, 80, 63);
+}
+
+.register-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    grid-column: span 12;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.register-form {
+    grid-column: span 12;
+    background-color: var(--color-light);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(10, 9, 8, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-instructions {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: var(--color-dark);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-dark);
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-accent1);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.required {
+    color: #ff0000;
+}
+
+.submit-btn {
+    background-color: var(--color-accent2);
+    color: var(--color-light);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-accent1);
+}
+
+@media screen and (min-width: 50rem) {
+    .register-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .register-form {
+        grid-column: 3 / span 8;
+        padding: 1.5rem;
+    }
+
+    .submit-btn {
+        width: auto;
+    }
+}
