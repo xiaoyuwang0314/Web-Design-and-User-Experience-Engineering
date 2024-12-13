@@ -9,8 +9,8 @@ This single-page application helps users discover indoor activities and survival
 ### Screenshots
 Here are some screenshots that demonstrate the visual effects and functionality of the project:
 
-<img src="src/assets/demo/demo1.png" width="300" /> <img src="src/assets/demo/demo2.png" width="300" />
-<img src="src/assets/demo/demo3.png" width="300" /> 
+<img src="src/assets/demo/demo1.png" width="300" /> 
+<img src="src/assets/demo/demo2.png" width="300" /> <img src="src/assets/demo/demo3.png" width="300" /> 
 <img src="src/assets/demo/demo4.jpg" width="300" /> <img src="src/assets/demo/demo5.PNG" width="300" />
 
 ## Features
