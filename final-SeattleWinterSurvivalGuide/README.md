@@ -6,6 +6,15 @@
 
 This single-page application helps users discover indoor activities and survival tips during Seattle's rainy winter season. This README.md file will briefly introduce the features and some known limitations of the project to help users navigate and interact with the application.
 
+### Screenshots
+Here are some screenshots that demonstrate the visual effects and functionality of the project:
+
+![Demo 1](assets/demo/demo1.png)
+![Demo 2](assets/demo/demo2.png)
+![Demo 3](assets/demo/demo3.png)
+![Demo 4](assets/demo/demo4.jpg)
+![Demo 5](assets/demo/demo5.png)
+
 ## Features
 
 ### 3 “Pages”
