@@ -20,7 +20,7 @@ Here are some screenshots that demonstrate the visual effects and functionality 
 2. **Indoor Activities**: Click "Indoor Activities" in the header
 3. **Winter Tips**: Click "Winter Tips" in the header
 
-### (at least) 5 Required Features
+### Required Features
 
 1. **Adaptive Hamburger Menu**: Appears on mobile devices (50rem and below)
 2. **Dropdown Navigation Menu**: "Hiking Trails" dropdown menu with 4 links in the header
@@ -65,7 +65,7 @@ Here are some screenshots that demonstrate the visual effects and functionality 
 - **Picture**: almost downloaded by random, without considering about color design...
 - **Color**: Despite multiple revisions, the color choices remain suboptimal due to the author's limited aesthetic sense.
 
-### Accessibility Features
+### Accessibility
 - Semantic HTML structure
 - ARIA labels where needed
 - Keyboard navigation support
@@ -100,50 +100,3 @@ npm run build
 ```bash
 npx serve -s dist
 ```
-
-
-## Project Structure
-src/
-├── App.css
-├── App.jsx
-├── assets
-│   └── images
-│       ├── cat-cafe.jpg
-│       ├── climbing.jpg
-│       ├── craft.jpg
-│       ├── dark_mode.svg
-│       ├── ice-skating.jpg
-│       ├── light_mode.svg
-│       ├── logo.svg
-│       ├── museum.jpg
-│       ├── seattle-dark.jpg
-│       ├── seattle-light.jpg
-│       └── shooting-range.jpg
-├── components
-│   ├── ComplexForm
-│   │   ├── ComplexForm.css
-│   │   └─ ComplexForm.jsx
-│   ├── Footer
-│   │   ├── Footer.css
-│   │   └── Footer.jsx
-│   ├── Header
-│   │   ├── Header.css
-│   │   └── Header.jsx
-│   ├── ShareTipForm
-│   │   ├── ShareTipForm.css
-│   │   └── ShareTipForm.jsx
-│   ├── ThemeToggle
-│   │   ├── ThemeToggle.css
-│   │   └── ThemeToggle.jsx
-│   └── Upvote
-│       ├── Upvote.css
-│       └── Upvote.jsx
-├── index.css
-├── main.jsx
-└── pages
-    ├── AccordionsPage.css
-    ├── AccordionsPage.jsx
-    ├── CardsPage.css
-    ├── CardsPage.jsx
-    ├── WelcomePage.css
-    └── WelcomePage.jsx
