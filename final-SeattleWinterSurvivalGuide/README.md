@@ -4,6 +4,10 @@
 **Course**: INFO 6150 - NEU  
 **Project**: Final Project
 
+**Live Demo**: [https://web-design-and-user-experience-engineering.vercel.app](https://web-design-and-user-experience-engineering.vercel.app)
+
+**Seattle Winter Survival Guide** is a frontend web application built with **React** and **Vite**, designed to showcase responsive UI design, interactive components, and accessibility features without backend dependencies.
+
 This single-page application helps users discover indoor activities and survival tips during Seattle's rainy winter season. This README.md file will briefly introduce the features and some known limitations of the project to help users navigate and interact with the application.
 
 ### Screenshots
@@ -20,7 +24,7 @@ Here are some screenshots that demonstrate the visual effects and functionality 
 2. **Indoor Activities**: Click "Indoor Activities" in the header
 3. **Winter Tips**: Click "Winter Tips" in the header
 
-### Required Features
+### Key Features
 
 1. **Adaptive Hamburger Menu**: Appears on mobile devices (50rem and below)
 2. **Dropdown Navigation Menu**: "Hiking Trails" dropdown menu with 4 links in the header
@@ -42,15 +46,11 @@ Here are some screenshots that demonstrate the visual effects and functionality 
 
 7. **A Dialog Modal**
    - Please click the "share your wisdom" button in the accordions page to share your tips
-   - the "tips" and "name" will appear in corresponding category after submitting
-   - Data Structure & Flow: 
-      - React: use event target to capture values from form fields 
-      - Uses object indexing for efficient category access
-      - Stores tips in category-specific arrays
-      - Each tip contains content and author name
-      - Renders tips using array mapping
+   - Submitted content appears dynamically under the selected category
+   - Form data is processed in-memory using object indexing and rendered with `.map()`
+   - **Note**: This feature is frontend-only, but can be easily extended by connecting to a backend service (e.g., REST API + database) to persist user-submitted tips.
 
-### Extra Features (may not meet the **required features**'s requirements but for fun...)
+### Extra Features (for fun...)
 
 **Upvote button**
    - UI: Upvote (👍) button for each tip in the accordions page
